@@ -29,6 +29,10 @@ Resultados = [
 # Ejercicio 3.
 
 print(f'\nLa suma entre {Num1} y {Num2} es {Resultados[0]}')
+print(f'\nLa resta entre {Num1} y {Num2} es {Resultados[1]}')
+print(f'\nLa multiplicacion entre {Num1} y {Num2} es {Resultados[2]}')
+print(f'\nLa division entre {Num1} y {Num2} es {Resultados[3]}')
+print(f'\nLa potencia de {Num1} ^ {Num2} es {Resultados[4]}')
 
 # Ejercicio 4.
 
