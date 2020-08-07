@@ -36,7 +36,7 @@ columnas = 7
 filas = 7
 
 
-def construir_martiz(columnas, filas):
+def construir_matriz(columnas, filas):
     return [[num for num in range(0, columnas)] for filas in range(filas)]
 
 
@@ -46,7 +46,7 @@ def print_matriz(matriz):
         print(fila)
 
 
-matriz = construir_martiz(columnas, filas)
+matriz = construir_matriz(columnas, filas)
 
 print()
 print(f'Tamano: {columnas} x {filas}')
