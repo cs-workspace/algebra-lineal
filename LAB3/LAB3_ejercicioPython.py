@@ -24,12 +24,12 @@ print('\nDiferencia de A - B:\n',  dif_matrices)
 
 
 # 4. Producto componente por componente entre A y B.
-productoPunto_matrices = np.dot(A, B)
-print('\nProducto Punto de A * B:\n', productoPunto_matrices)
+producto_cxc = A * B
+print('\nProducto componente por componente AB:\n', producto_cxc)
 
 
 # 5. Producto Matricial BA
-producto_matrices = B * A
+producto_matrices = B.dot(A)
 print('\nProducto Matricial de BA:\n', producto_matrices)
 
 

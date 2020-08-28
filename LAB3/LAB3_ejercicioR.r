@@ -26,8 +26,9 @@ print ('Diferemcia de matrices A - B')
 print(A - B)
 
 
-# 4. Producto componente por componente entre A y B.
-
+# 4. Producto Punto / componente por componente entre A y B.
+print('Producto Componente por Componente A y B')
+print(A * B)
 
 # 5. Producto Matricial BA
 print('Producto matricial BA' )
