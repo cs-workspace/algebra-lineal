@@ -8,8 +8,8 @@ import numpy as np
 import sympy as sp
 
 # 1. Matrices A y B tamano 15 x 15 numeros aleatorios entre (-10, 10)
-A = np.random.randint(-10, 10, size=(2, 2))
-B = np.random.randint(-10, 10, size=(2, 2))
+A = np.random.randint(-10, 10, size=(15, 15))
+B = np.random.randint(-10, 10, size=(15, 15))
 print('Matriz A:\n', A)
 print('\nMatriz B:\n', B)
 
