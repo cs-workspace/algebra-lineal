@@ -29,7 +29,7 @@ print("Z Maximo: ", resultado.fun * -1, " Valor de X: ",
 # Ejercicio 2: Minimizar minimizar el costo y mantener el contenido de grasa no mayor de 25%
 
 # coeficientes de la funcion de costo a optimizar
-funcion_costo = np.array([-80, -60])
+funcion_costo = np.array([80, 60])
 
 # coeficientes de la matriz de desigualdades
 matriz_desigualdades_mayor = np.array([[0.8, 0.68]])
@@ -38,9 +38,9 @@ coeficientes_libres_mayor = np.array([0.75])  # coeficientes libres
 matriz_desigualdades_menor = np.array([[0.2, 0.32]])
 coeficientes_libres_menor = np.array([0.25])  # coeficientes libres
 
-resultado = linprog(funcion_costo, matriz_desigualdades_mayor,
-                    coeficientes_libres_mayor, matriz_desigualdades_menor, coeficientes_libres_menor, method="interior-point")
+resultado = linprog(funcion_costo, matriz_desigualdades_menor, coeficientes_libres_menor, matriz_desigualdades_mayor,
+                    coeficientes_libres_mayor, method="interior-point")
 
 print("\nResultado", resultado)
-print("Z Minimo: ", resultado.fun * -1, " Valor de X: ",
+print("Z Minimo: ", resultado.fun * 1, " Valor de X: ",
       resultado.x[0], " Valor de Y: ", resultado.x[1])
