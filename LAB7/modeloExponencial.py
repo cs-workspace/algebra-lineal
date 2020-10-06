@@ -1,20 +1,20 @@
+import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import matplotlib
 matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
 
 
-df = pd.read_excel("Datos.xlsx",sheet_name='Exponencial')
+df = pd.read_excel("Datos.xlsx", sheet_name='Exponencial')
 
-x=((df.ix[:,0]).to_numpy())
-x=x-x[0]
-y=((df.ix[:,1]).to_numpy())
+x = ((df.iloc[:, 0]).to_numpy())
+x = x-x[0]
+y = ((df.iloc[:, 1]).to_numpy())
 
 p = np.polyfit(x, np.log(y), 1)
 
-Po=np.exp(p[1])
-r=p[0]
+Po = np.exp(p[1])
+r = p[0]
 
 print(r, Po)
 

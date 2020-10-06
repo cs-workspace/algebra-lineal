@@ -7,8 +7,8 @@ matplotlib.use('TkAgg')
 
 df = pd.read_excel("Datos.xlsx", sheet_name='Lineal')
 
-x = ((df.ix[:, 0]).to_numpy())
-y = ((df.ix[:, 1]).to_numpy())
+x = ((df.iloc[:, 0]).to_numpy())
+y = ((df.iloc[:, 1]).to_numpy())
 
 p = np.polyfit(x, y, 1)
 
