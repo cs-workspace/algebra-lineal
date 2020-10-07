@@ -1,28 +1,22 @@
-"""
-Algebra Lineal Lab-7
-Entrega: 10/7/20
-@steven_wilson
-"""
-
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import matplotlib
 matplotlib.use('TkAgg')
 
-# Coronavirus - Cases vs Days
-df = pd.read_excel("ejercicio/Data.xlsx", sheet_name='Mexponencial')
 
-x = ((df.iloc[:, 1]).to_numpy())
+df = pd.read_excel("Datos.xlsx", sheet_name='Exponencial')
+
+x = ((df.ix[:, 0]).to_numpy())
 x = x-x[0]
-y = ((df.iloc[:, 2]).to_numpy())
+y = ((df.ix[:, 1]).to_numpy())
 
 p = np.polyfit(x, np.log(y), 1)
 
 Po = np.exp(p[1])
 r = p[0]
 
-print('Coronavirus - Cases vs Days\n', r, Po)
+print(r, Po)
 
 # Valores de y calculados del ajuste
 y_ajuste = Po * np.exp(r*x)

@@ -11,7 +11,7 @@ import matplotlib
 matplotlib.use('TkAgg')
 
 # Position - Level vs Salary
-df = pd.read_excel("ejercicio/Data.xlsx", sheet_name='Mcuadratico')
+df = pd.read_excel("Data.xlsx", sheet_name='Mcuadratico')
 
 x = ((df.iloc[:, 1]).to_numpy())
 y = ((df.iloc[:, 2]).to_numpy())

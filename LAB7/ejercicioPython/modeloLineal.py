@@ -11,7 +11,7 @@ import matplotlib
 matplotlib.use('TkAgg')
 
 # GRE - Admission
-df = pd.read_excel("ejercicio/Data.xlsx", sheet_name='Mlineal')
+df = pd.read_excel("Data.xlsx", sheet_name='Mlineal')
 
 x = ((df.iloc[:, 0]).to_numpy())
 y = ((df.iloc[:, 1]).to_numpy())

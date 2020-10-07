@@ -16,5 +16,5 @@ p
 plot(datos$x, datos$y, pch=16, cex.lab = 1.3, col = "red", xlab="x", ylab="y", main="Recta de mejor ajuste")
 
 #graficar recta de ajuste
-yf <- polyval(p, x)
+yf <- polyval(p, datos$x)
 lines(datos$x, yf, col="blue")
