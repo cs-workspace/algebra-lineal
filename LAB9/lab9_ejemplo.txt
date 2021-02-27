@@ -1,0 +1,37 @@
+import numpy as np
+
+
+v1 = [[3, 1, -1]]
+v2 = [[0, 2, 2]]
+v3 = [[2, -3, 3]]
+
+#Verificando si son ortonormales
+mult = np.dot(v2, np.transpose(v1))
+if(mult[0][0]==0):
+    print("V1 y V2 son ortogonales")
+else:
+    print("V1 y V2 no son ortogonales")
+
+mult = np.dot(v3, np.transpose(v1))
+if(mult[0][0]==0):
+    print("V1 y V3 son ortogonales")
+else:
+    print("V1 y V3 no son ortogonales")
+
+mult = np.dot(v3, np.transpose(v2))
+if(mult[0][0]==0):
+    print("V2 y V3 son ortogonales")
+else:
+    print("V2 y V3 no son ortogonales")
+
+
+
+#Generando conjunto  ortonormal
+
+V1n = (v1/np.linalg.norm(v1))
+V2n = (v2/np.linalg.norm(v2))
+V3n = (v3/np.linalg.norm(v3))
+
+print(V1n)
+print(V2n)
+print(V3n)
